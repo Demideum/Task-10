@@ -4,21 +4,16 @@ namespace IJunior_Task10
     {
         static void Main(string[] args)
         {
+            string stopWord = "exit";
+            string userResponse = "";
+
             Console.WriteLine("Купи слона. Для выхода введите \"exit\"");
             Console.WriteLine("\nКупи слона!");
 
-            while (true)
+            while (stopWord != userResponse)
             {
-                string userResponse = Console.ReadLine();
-
-                if (userResponse != "exit")
-                {
-                    Console.WriteLine($"Все говорят {userResponse}. А ты купи слона!");
-                }
-                else
-                {
-                    break;
-                }
+                userResponse = Console.ReadLine();
+                Console.WriteLine($"Все говорят {userResponse}. А ты купи слона!");
             }
         }
     }
