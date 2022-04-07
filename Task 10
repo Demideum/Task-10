@@ -1,0 +1,25 @@
+namespace IJunior_Task10
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Купи слона. Для выхода введите \"exit\"");
+            Console.WriteLine("\nКупи слона!");
+
+            while (true)
+            {
+                string userResponse = Console.ReadLine();
+
+                if (userResponse != "exit")
+                {
+                    Console.WriteLine($"Все говорят {userResponse}. А ты купи слона!");
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+    }
+}
